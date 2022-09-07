@@ -1,7 +1,7 @@
 <h1>App de fútbol</h1>
 
 <div class="list-container">
-    <div class="list-item" *ngFor="let league of leagues">
+    <div routerLink="/league/{{league.Identificador}}" class="list-item" *ngFor="let league of leagues">
         <img class="team-avatar" [src]="league['Logo de la Liga']" alt="">
         <span class="team-name">{{ league['Nombre De La Liga'] }}</span>
     </div>
