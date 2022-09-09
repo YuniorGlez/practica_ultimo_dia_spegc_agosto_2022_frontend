@@ -32,4 +32,11 @@ export class LeaguesService {
       })
   }
 
+  getOne(id: string): Promise<League | undefined> {
+    return axios.get<League[]>(this.url)
+      .then(res => {
+        return res.data.find(league => league.Identificador === id)
+      })
+  }
+
 }
