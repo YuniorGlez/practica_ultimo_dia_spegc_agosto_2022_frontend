@@ -15,11 +15,11 @@ const routes: Routes = [
     component : LeaguePageComponent
   }, 
   {
-    path : "league/:leagueID/team/:teamID",
+    path : "league/:leagueID/teams/:teamID",
     component : TeamPageComponent
   },
   {
-    path : "league/:leagueID/team/:teamID/player/:playerID",
+    path : "league/:leagueID/teams/:teamID/player/:playerID",
     component : PlayerPageComponent
   },
 ];

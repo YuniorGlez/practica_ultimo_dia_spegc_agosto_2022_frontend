@@ -1,1 +1,10 @@
-<p>league-page works!</p>
+<button> atras </button>
+<span >{{league != null? league['Nombre De La Liga'] : "" }}</span>
+
+
+<div class="list-container">
+    <div routerLink="teams/{{team.id}}" class="list-item" *ngFor="let team of teams">
+        <img [src]="team['Logo del Equipo']" alt="" class="logo">
+        <span>Nombre: {{team['Nombre del equipo']}}</span>
+    </div>
+</div>
